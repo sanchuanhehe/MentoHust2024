@@ -20,12 +20,38 @@ if not os.path.exists(
     )
     exit()
 
+# 检查edgedriver是否安装在.\edgedriver_win64\msedgedriver.exe
+if not os.path.exists(".\\edgedriver_win64\\msedgedriver.exe"):
+    print(
+        "请下载edgedriver,并将其放在当前目录下的edgedriver_win64文件夹中,下载地址:https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/"
+    )
+    exit()
+
+# 检查配置文件是否存在
+if not os.path.exists("config.json"):
+    print("请创建.\config.json文件,并按照如下的格式填写")
+    print('''
+        {
+            "users": [
+                {
+                    "username": "UXXXXXXXXX",
+                    "password": "xxxxxxxxx"
+                },
+                {
+                    "username": "MXXXXXXXXX",
+                    "password": "xxxxxxxxx"
+                }
+            ]
+        }
+    ''')
+    exit()
+
 
 def is_connected():
     # 使用ping命令ping www.baidu.com，如果成功，返回0
     return os.system("ping -n 1 www.baidu.com") == 0
 
-print("欢迎使用MentoHUST2024   版本号:0.1.0")
+print("欢迎使用MentoHUST2024   版本号:0.1.0 alpha1")
 print("人到华中大,有甜亦有辣.明德厚学地,求是创新家.")
 
 while True:

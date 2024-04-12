@@ -17,3 +17,8 @@ build/autoconect/localpycs/pyimod02_importers.pyc
 build/autoconect/localpycs/pyimod03_ctypes.pyc
 build/autoconect/localpycs/struct.pyc
 build/autoconect/localpycs/pyimod04_pywin32.pyc
+edgedriver_win64.zip
+edgedriver_win64/Driver_Notes/EULA
+edgedriver_win64/Driver_Notes/credits.html
+edgedriver_win64/Driver_Notes/LICENSE
+edgedriver_win64/msedgedriver.exe

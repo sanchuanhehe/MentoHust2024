@@ -53,6 +53,7 @@ def get_connect(user_index=None):
     options.add_argument("--headless")
 
     # 创建 WebDriver 对象
+    service = webdriver.EdgeService('.\edgedriver_win64\msedgedriver.exe')
     driver = webdriver.Edge(options=options)
     # 如果是firefox浏览器,则使用下面的代码
     # driver = webdriver.Firefox(options=options)
