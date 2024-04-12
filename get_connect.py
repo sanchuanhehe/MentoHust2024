@@ -8,10 +8,15 @@ from selenium.common.exceptions import TimeoutException
 import time
 from selenium.webdriver import ActionChains
 import json
-
+import os
 
 def get_credentials(file_path):
-    with open(file_path, "r") as f:
+    # 获取脚本所在的目录
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+    # 将目录和文件名拼接起来，得到文件的绝对路径
+    abs_file_path = os.path.join(dir_path, file_path)
+
+    with open(abs_file_path, "r") as f:
         data = json.load(f)
     return data["users"]
 
