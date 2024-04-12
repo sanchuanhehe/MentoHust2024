@@ -1,7 +1,7 @@
-./build/**
-./.vscode/**
+.vscode/**
 ./._pycache_/**
 ./*.spec
+build/** 
 autoconect.spec
 build/autoconect/Analysis-00.toc
 build/autoconect/autoconect.pkg
@@ -22,3 +22,4 @@ edgedriver_win64/Driver_Notes/EULA
 edgedriver_win64/Driver_Notes/credits.html
 edgedriver_win64/Driver_Notes/LICENSE
 edgedriver_win64/msedgedriver.exe
+autoconnect.zip
