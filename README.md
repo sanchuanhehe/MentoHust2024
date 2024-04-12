@@ -20,6 +20,8 @@ pip install selenium
 
 默认需要edge,可以自行修改为火狐,chrome
 
+发布版本使用方法,同目录下放置config.json
+
 ## 可二次开发方向
 
 有的学校需要输入或选择其它的栏目,请自行研究
