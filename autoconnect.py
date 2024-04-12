@@ -9,6 +9,7 @@ try:
     import selenium
 except ImportError:
     print("请安装selenium库,可以使用pip install selenium安装")
+    time.sleep(50)
     exit()
 
 # 检查edge浏览器"msedge.exe"是否安装
@@ -18,6 +19,7 @@ if not os.path.exists(
     print(
         "请安装edge浏览器,并将其安装目录添加到系统环境变量中,或者修改get_connect.py中的webdriver.Edge()为webdriver.Chrome()或者webdriver.Firefox()"
     )
+    time.sleep(50)
     exit()
 
 # 检查edgedriver是否安装在.\edgedriver_win64\msedgedriver.exe
@@ -25,6 +27,7 @@ if not os.path.exists(".\\edgedriver_win64\\msedgedriver.exe"):
     print(
         "请下载edgedriver,并将其放在当前目录下的edgedriver_win64文件夹中,下载地址:https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/"
     )
+    time.sleep(50)
     exit()
 
 # 检查配置文件是否存在
@@ -44,6 +47,7 @@ if not os.path.exists("config.json"):
             ]
         }
     ''')
+    time.sleep(50)
     exit()
 
 
